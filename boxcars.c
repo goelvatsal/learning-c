@@ -5,7 +5,7 @@ int main(void) {
     double array[50];
     int num_cars = 0;
 
-    printf("Hello");
+    printf("Hello\n");
 
     scanf("%d", &num_cars);
 
