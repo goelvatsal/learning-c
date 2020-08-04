@@ -7,11 +7,15 @@ int main(void) {
 
     // printf("Hello World!\n");
 
+    printf("Number of boxcars: ");
     scanf("%d", &num_cars);
 
     // loop over the the num cars and printing the array
      for(int i = 0; i < num_cars; i++) {
-        printf("Weight of boxcar %d:", num_cars--);
-        scanf("%d", array[num_cars]);
+        printf("Weight of boxcar %d: ", i+1);
+        scanf("%lf", &array[i]);
     }
+
+    // loop over array and printing values
+
 }
