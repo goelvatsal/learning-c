@@ -19,5 +19,5 @@ int main(void) {
     // loop over array and printing values
     printf("What boxcar variable do you want to retrieve? ");
     scanf("%lf", &array[50]);
-    printf("Boxcar %.0lf weighs %.2lf\n", array[50], array[i-1]);
+    printf("Boxcar %.0lf weighs %.2lf\n", array[50], array[]);
 }
