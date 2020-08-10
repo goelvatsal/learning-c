@@ -6,13 +6,13 @@ int main(void) {
     // printf("Hello World!\n");
 
     int num_cars = 0;
-    printf("Number of boxcars: ");
+    // printf("Number of boxcars: ");
     scanf("%d", &num_cars);
 
     // loop over the the num cars and printing the array
      int i = 0;
      for(int i = 0; i < num_cars; i++) {
-        printf("Weight of boxcar %d: ", i+1);
+        // printf("Weight of boxcar %d: ", i+1);
         scanf("%lf", &array[i]);
     }
 
