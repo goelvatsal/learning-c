@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(void) {
     // declare variable
-    double array[51];
+    double array[52];
 
     // printf("Hello World!\n");
 
@@ -16,8 +16,8 @@ int main(void) {
         scanf("%lf", &array[i]);
     }
 
-    // loop over array and printing values
-    printf("What boxcar variable do you want to retrieve? ");
-    scanf("%lf", &array[50]);
-    printf("Boxcar %.0lf weighs %.2lf\n", array[50], array[]);
+    // // loop over array and printing values
+    // printf("What boxcar variable do you want to retrieve? ");
+    // scanf("%lf", &array[51]);
+    // printf("Boxcar %.0lf weighs %.2lf\n", array[51], array[]);
 }
