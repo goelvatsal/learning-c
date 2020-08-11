@@ -10,16 +10,31 @@ int main(void) {
     scanf("%d", &num_cars);
 
     // loop over the the num cars and printing the array
-    // double total_weight = 0;
-     for(int i = 0; i < num_cars; i++) {
+    // int i = 0;
+    // double readValue = 0.0;
+    for(int i = 0; i < num_cars; i++) {
         // printf("Weight of boxcar %d: ", i+1);
         scanf("%lf", &array[i]);
     }
 
-    if(array[i] <= 1) {
-        double total_weight = 0;
-        
+    //Printing values
+    // for(int i = 0; i < num_cars; i++) {
+    //     printf("%.2lf\n", array[i]);
+    // }
+
+    for(int i = 0; i < num_cars; i++) {
+        printf("Array[%d] = %.2lf\n", i, array[i]);
     }
+
+    // calculating sum
+    double sum = 0.0;
+    for(int i = 0; i < num_cars; i++) {
+        sum = sum + array[i];
+        printf("Sum = %.2lf & i = %d\n", sum, i);
+    }
+    printf("sum = %.2lf \n", sum);
+    double avg = (sum / num_cars);
+    printf("The average is %.2lf", avg);
 
     // total_weight = array[i]
 
