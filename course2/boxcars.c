@@ -23,21 +23,22 @@ int main(void) {
     // }
 
     for(int i = 0; i < num_cars; i++) {
-        printf("Array[%d] = %.2lf\n", i, array[i]);
+        // printf("Array[%d] = %.2lf\n", i, array[i]);
     }
 
     // calculating sum
     double sum = 0.0;
     for(int i = 0; i < num_cars; i++) {
         sum = sum + array[i];
-        printf("Sum = %.2lf & i = %d\n", sum, i);
+        // printf("Sum = %.2lf & i = %d\n", sum, i);
     }
-    printf("sum = %.2lf \n", sum);
+    printf("Sum = %.2lf \n", sum);
     double avg = (sum / num_cars);
     printf("The average is %.2lf", avg);
 
     // total_weight = array[i]
 
+    if(avg )
     // printf("total_weight is %.1lf\n", total_weight);
     // // loop over array and printing values
     // printf("What boxcar variable do you want to retrieve? ");
