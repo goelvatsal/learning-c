@@ -38,7 +38,13 @@ int main(void) {
 
     // total_weight = array[i]
 
-    if(avg )
+    
+    for(int i = 0; i < num_cars; i++) {
+        if(avg < i) {
+            printf("-%.0lf", array[i]);
+        }
+    } 
+
     // printf("total_weight is %.1lf\n", total_weight);
     // // loop over array and printing values
     // printf("What boxcar variable do you want to retrieve? ");
