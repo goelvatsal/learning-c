@@ -38,10 +38,16 @@ int main(void) {
 
     // total_weight = array[i]
 
-    
+    // First, create if statement inside the for loop. Then, if the actual weight for each boxcar 
+    // is more than the average, then calculate the diff between the boxcar and the avg (boxcar - avg) and display diff.
+    // else then add the weight that is required for the boxcars to have the same weight.
     for(int i = 0; i < num_cars; i++) {
-        if(avg < i) {
-            printf("-%.0lf", array[i]);
+        if(avg < array[i]) {
+            printf("-%.0lf\n", avg - array[i]);
+        } else {
+            double diffadd = 0;
+            diffadd = avg - array[1];
+            printf("%.1lf\n", diffadd);
         }
     } 
 
