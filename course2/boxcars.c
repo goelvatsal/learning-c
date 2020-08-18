@@ -7,7 +7,7 @@ int main(void) {
 
     int num_cars = 0;
     // printf("Number of boxcars: ");
-    printf("\nInput: \n");
+    printf("\nInput \n");
     scanf("%d", &num_cars);
 
     // loop over the the num cars and printing the array
@@ -42,16 +42,16 @@ int main(void) {
     // First, create if statement inside the for loop. Then, if the actual weight for each boxcar 
     // is more than the average, then calculate the diff between the boxcar and the avg (boxcar - avg) and display diff.
     // else then add the weight that is required for the boxcars to have the same weight.
-    printf("\nOutput: \n");
+    printf("\nOutput \n");
     for(int i = 0; i < num_cars; i++) {
         // printf("Inside the loop %d times\n", i);
+        double diff = 0;
         if(avg < array[i]) {
-            printf("%.1lf\n", avg - array[i]);
-        } else {
-            double diffadd = 0;
-            diffadd = avg - array[1];
-            printf("%.1lf\n", diffadd);
+            diff = avg - array[i];
+        } else if(avg > array[i]) {
+            diff = avg - array[i];
         }
+        printf("%.1lf\n", diff);
     } 
 
     // printf("total_weight is %.1lf\n", total_weight);
@@ -59,4 +59,20 @@ int main(void) {
     // printf("What boxcar variable do you want to retrieve? ");
     // scanf("%lf", &array[51]);
     // printf("Boxcar %.0lf weighs %.2lf\n", array[51], array[]);
+
+     // Input
+            // 5
+            // 40.0
+            // 12.0
+            // 20.0
+            // 5.0
+            // 33.0
+
+            // Output
+
+            // -18.0
+            // 10.0
+            // 2.0
+            // 17.0
+            // -11.0
 }
