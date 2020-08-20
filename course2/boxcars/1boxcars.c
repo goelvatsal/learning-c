@@ -20,7 +20,12 @@ int main(void) {
         printf("%d\n", array[i]);
     }
         printf("\n");
+<<<<<<< HEAD
+    
+    printf("Array elements = %d, %d, %d, %d, and %d\n", array[0], array[1], array[2], array[3], array[4]);
+=======
 
+>>>>>>> master
     // find the average
     double sum = array[0] + array[1] + array[2] + array[3] + array[4];
     printf("Sum = %.2lf\n", sum); 
