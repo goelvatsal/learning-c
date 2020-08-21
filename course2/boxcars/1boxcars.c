@@ -30,6 +30,7 @@ int main(void) {
     for(int i = 0; i < num_cars; i++) {
         double diff = avg - array[i];
         printf("%.2lf\n", diff); 
+        
     }
     // debug: print the array using loop
     // for(int i = 0; i < num_cars; i++) {
