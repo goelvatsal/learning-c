@@ -5,10 +5,10 @@ int main(void) {
     int num_cars = 0;
     
     // scanf for num_cars
-    printf("Input: \n");
+    // printf("Input: \n");
     scanf("%d", &num_cars);
     for(int i = 0; i < num_cars; i++) {
-        scanf("%2lf", &array[i]);
+        scanf("%lf", &array[i]);
     }
     printf("\n");
     
@@ -24,9 +24,9 @@ int main(void) {
     
     // create loop and find diff; display output
     double diff = 0;
-    printf("Output: \n");
+    // printf("Output: \n");
     for(int i = 0; i < num_cars; i++) {
         diff = avg - array[i];
-        printf("%.2lf\n", diff);
+        printf("%.1lf\n", diff);
     }
 }
