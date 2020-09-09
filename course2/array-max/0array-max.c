@@ -10,14 +10,18 @@ int main(void) {
         scanf("%lf", &array[i]);
         // printf("%.2lf\n", array[i]);
     }
-
+    
     // create more scanfs to take input for how many pounds
     double divide[array_num];
-    double money_items = 0;
+    double total_money = 0;
     for(int i = 0; i < array_num; i++) {
         scanf("%lf", &divide[i]);
-        double money_items = divide[array_num] / array[i];
+        // printf("%.3lf\n", divide[i]);
+        double money_items = divide[array_num] * array[i];
+        double old_items = money_items;
+        double total_money = old_items + money_items;
     }
-    printf("%lf\n", money_items);
+
+    // printf the total_price
+    printf("%lf\n", total_money);
 }
-// printf the total_price
