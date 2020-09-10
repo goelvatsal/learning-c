@@ -23,5 +23,5 @@ int main(void) {
     }
 
     // printf the total_price
-    printf("%lf\n", total_money);
+    printf("%.3lf\n", total_money);
 }
