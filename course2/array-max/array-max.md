@@ -12,5 +12,3 @@ Input:
 
 Output:
 29.325000
-
-Made with 
