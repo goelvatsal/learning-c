@@ -23,6 +23,6 @@ int main(void) {
         sum = sum + price;
     }
 
-    // print the price
+    // print the sum
     printf("%lf", sum);
 }
