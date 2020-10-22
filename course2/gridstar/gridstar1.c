@@ -1,4 +1,4 @@
-#include <stdio.h> 
+#include <stdio.h>
 int main(void) {
     // 1. declare nessasary variables
     int starNum = 0;
