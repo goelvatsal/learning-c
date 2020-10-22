@@ -6,11 +6,12 @@ int main(void) {
     // 2. create scanf to ask for input
     scanf("%d", &starNum);
 
-    // 3. create for loop
+    // 3. create for loop & printf grid of stars
     for(int i = 0; i < starNum; i++) {
-        printf("")
+        for(int i = 0; i < starNum; i++) {
+            printf("*");
+        }
+    
     }
-    // 4. printf the grid of stars
-
-
+    printf("\n");
 }
