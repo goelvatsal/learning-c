@@ -8,7 +8,28 @@ int main(void) {
 
     // 3. create for loop & printf grid of stars
     for(int i = 0; i < starNum; i++) {
-        printf("*");
+        for(int i = 0; i < starNum; i++) {
+            printf("*");
+        }
     }
     printf("\n");
 }
+
+
+
+
+ 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
