@@ -23,7 +23,6 @@ Output
 17.0
 -11.0
 
-
 Plan:
 1. First, add all of the weights together (box1 + box 2 + box3, etc)
 2. Divide the total weight of the boxcars by the amount of the cars
