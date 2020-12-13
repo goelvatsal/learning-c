@@ -13,9 +13,11 @@ int main(void) {
     while(guess != correctNum) {
         // if num more than guess, print it is more
         scanf("%d", &guess);
+        printf("%d\n", guess);
         while(guess > correctNum) {
             printf("it is less\n");
             numGuesses++;
+            printf("numGuesses = %d\n", numGuesses);
             scanf("%d", &guess);
         }
         // if num less then guess, print it is less
@@ -28,7 +30,7 @@ int main(void) {
 
     // once num guessed, break; and print num of tries needed
     while(guess == correctNum) {
-        printf("Number of guesses to correct answer: %d\n", numGuesses);
+        printf("Number of tries needed\n %d\n", numGuesses+1);
         break;
     }
 }
