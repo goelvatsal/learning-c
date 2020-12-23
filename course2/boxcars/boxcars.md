@@ -22,10 +22,3 @@ Output
 2.0
 17.0
 -11.0
-
-Plan:
-1. First, add all of the weights together (box1 + box 2 + box3, etc)
-2. Divide the total weight of the boxcars by the amount of the cars
-3. Then, read the value of boxcar x and make sure it is the mean or the average of the total weight of the boxcars
-4. If the number is too big, subtract the original number (for example, the first car weighs 40.0. You would subtract that by the mean/average and then display -18 because 40 - 22 = 18. Then you should put the hyphen or minus sign in front of it to show that it means to subract the number.)
-5. If the number is too small, (For example, the second number, 12, is 10 too small to be balanced. You would need to add 10 to the number and this time, do not put the hyphen or the minus sign because you are adding ten.)
