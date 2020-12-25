@@ -1,31 +1,29 @@
 #include <stdio.h>
 int main(void) {
+    // declare nessasary variables
+    int numofitems = 0;
+    double perpound = 0, amountreq = 0, price[101];
 
-    int arraynum;
-    // scanf the amount of ingredients & test
-    scanf("%d", &arraynum);
-    printf("ing num: %d\n", arraynum);
+    // scan the number of items
+    scanf("%d", &numofitems);
+    printf("numofitems = %d\n", numofitems);
 
-    double priceperp[100];
-    // then scanf the price per ingriedients
-    for(int i = 0; i < arraynum; i++) {
-        scanf("%lf", &priceperp[i]);
-        printf("priceperp[%d]: %.2lf\n",i, priceperp[i]);
-    }
-    
-    double pound_req[100];
-    // scanf price per pound
-    for(int i = 0; i < arraynum; i++) {
-        scanf("%lf", &pound_req[i]);
-        printf("pound_req[%d]: %.2lf\n",i , pound_req[i]);
+    // scan the price per pound
+    for(int i = 0; i < numofitems; i++) {
+        scanf("%lf", &perpound);
+        printf("price per pound required = %lf\n", perpound);
     }
 
-    // add all the prices to sum
-    double sum, price;
-    for(int i = 0; i < arraynum; i++) {
-        price = priceperp[i] * pound_req[i];
-        sum = sum + price;
-        
-        printf("sum: %.6lf\n", sum);
+    // scan the amount of each ingredient required
+    for(int i = 0; i < numofitems; i++) {
+        scanf("%lf", &amountreq);
+        printf("amountreq = %lf\n", amountreq);
+    }
+
+    // multiply price per pound with amount of each ingredient
+    for(int i = 0; i < numofitems; i++) {
+        price[i] = perpound * amountreq;
+        price[i] = price[i] + price[i];
+        printf("price = %f\n", price);
     }
 }
