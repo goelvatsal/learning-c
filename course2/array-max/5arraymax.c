@@ -23,7 +23,6 @@ int main(void) {
     // multiply price per pound with amount of each ingredient
     for(int i = 0; i < numofitems; i++) {
         price[i] = perpound * amountreq;
-        price[i] = price[i] + price[i];
-        printf("price = %f\n", price);
+        printf("price = %lf\n", price[i]);
     }
 }
