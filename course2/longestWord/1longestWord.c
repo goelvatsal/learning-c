@@ -12,7 +12,6 @@ int main(void) {
     for(int i = 0; i < numofwords; i++) {
         scanf("%s", word);
         length = 0;
-        // printf("%s ", word);
         while(word[length] != '\0') {
             length++;
         }
