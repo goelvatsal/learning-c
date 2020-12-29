@@ -15,6 +15,6 @@ int main(void) {
         while(word[length] != '\0') {
             length++;
         }
-        printf("%s %d ", word, length);
+        // printf("%s %d ", word, length);
     }
 }
