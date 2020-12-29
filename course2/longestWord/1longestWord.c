@@ -1,20 +1,26 @@
 #include <stdio.h>
 int main(void) {
     // declare all nessasary variables
-    int numofwords = 0, length = 0;
+    int numofwords = 0;
 
     // scan number of words
     scanf("%d", &numofwords);
     printf("numofwords = %d\n", numofwords);
 
-    // start a while loop
     char word[101];
+
+    int maxLen = 0;
     for(int i = 0; i < numofwords; i++) {
         scanf("%s", word);
-        length = 0;
-        while(word[length] != '\0') {
-            length++;
+        int newLen = 0;
+        while(word[newLen] != '\0') {
+            newLen++;
         }
-        // printf("%s %d ", word, length);
+        if(newLen > maxLen) {
+            maxLen = newLen;
+        }
+        word[i] = '\0';
+        // printf("%s %d ", word, newLen);
     }
+    printf("%d\n", maxLen);
 }
