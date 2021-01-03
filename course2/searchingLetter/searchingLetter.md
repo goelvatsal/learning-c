@@ -13,7 +13,7 @@ Output:
 2
 
 Input:
-enter
+entre
 
 Output:
 1
