@@ -8,10 +8,10 @@ int main(void) {
     for(int i = 0; i < numofelements - 1; i++) { 
         for(int j = 0; j < numofelements - 1; j++) {
             // printf("\ni=%d\n", i);
-            if (wordScanned[i] > wordScanned[i + 1]) {
-                swap = wordScanned[i];
-                wordScanned[i] = wordScanned[i + 1];
-                wordScanned[i + 1] = swap;
+            if (wordScanned[j] > wordScanned[j + 1]) {
+                swap = wordScanned[j];
+                wordScanned[j] = wordScanned[j + 1];
+                wordScanned[j + 1] = swap;
         }
         // printf("end: i=%d\n", i);
     }
@@ -30,7 +30,7 @@ int main(void) {
         // we should have the previous letter
         if (prevLtr != '\0') {
             if(currLtr == prevLtr) {
-                if (prevIncLetter != currLtr) {
+                if (prevIncLetter != currLtr) { 
                     numMultiLtrs++;
                     // printf("incremented numMultiLtrs = %d\n", numMultiLtrs);
 
