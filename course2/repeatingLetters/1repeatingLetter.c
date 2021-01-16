@@ -11,19 +11,19 @@ int main(void) {
     printf("len of word: %d\n", k);
     int swap = 0, numofelements = 51; 
     for(int i = 0; i < numofelements - 1; i++) {
-        // for(int j = 0; j < numofelements - 1; j++) {
+        for(int j = 0; j < numofelements - 1; j++) {
             if(wordScanned[i + 1] == '\0') {
-            break;
+                break;
+            }
+            if (wordScanned[i] > wordScanned[i + 1]) {
+                swap = wordScanned[i];
+                wordScanned[i] = wordScanned[i + 1];
+                wordScanned[i + 1] = swap;
+            }
         }
-        if (wordScanned[i] > wordScanned[i + 1]) {
-            swap = wordScanned[i];
-            wordScanned[i] = wordScanned[i + 1];
-            wordScanned[i + 1] = swap;
-        }
-        // }
     }
     printf("sorted word = %s\n", wordScanned);
-    printf("wordScanned = %s\n", wordScanned);
+    // printf("wordScanned = %s\n", wordScanned);
 
     char currLtr = '\0', prevLtr = '\0', prevIncLetter = '\0';
     int numMultiLtrs = 0, i = 0;
@@ -51,6 +51,6 @@ int main(void) {
         i++;
 
         printf("prevLtr = %c, prevIncLetter = %c, numMultiLtrs = %d\n", prevLtr, prevIncLetter, numMultiLtrs);
-    }
+    } 
     printf("\nnumMultiLtrs = %d\n", numMultiLtrs);
 }
