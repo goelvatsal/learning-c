@@ -12,36 +12,32 @@ int main(void) {
         printf("studentScore[%d] = %d\n", i, studentScores[i]);
     }
 
-    // create second for loop to count students
+    int swap = 0;
+    for(int i = 0; i < numStudents; i++) {
+        for(int i = 0; i < numStudents; i++) {
+            if(studentScores[i] > studentScores[i + 1]) {
+                if(studentScores[i + 1] == 0) {
+                    break;
+                }
+                swap = studentScores[i + 1];
+                studentScores[i + 1] = studentScores[i];
+                studentScores[i] = swap;
+            }
+        }
+    }
+
+    // printf("studentScores == %d\n", studentScores[i]);
+    int studentRank[51];
+    for(int i = 0; i < numStudents; i++) {
+        if(studentScores[i] > studentScores[i + 1]) {
+            studentRank[i] = 1;
+        }
+    }
+    
+    // print the scores
     char studentName[51];
     for(int i = 0; i < numStudents; i++) {
         scanf("%s", studentName);
-        printf("studentName[%d] = %s\n", i, studentName);
+        printf("%s score is %d\n", studentName, studentScores[i]);
     }
-
-    // int studentRank[51];
-    int swap = 0;
-    // char charswap = '\0';
-    for(int i = 0; i < numStudents; i++) {
-        if(studentScores[i] > studentScores[i + 1]) {
-            if(studentScores[i + 1] == 0) {
-                break;
-            }
-            swap = studentScores[i + 1];
-            studentScores[i + 1] = studentScores[i];
-            studentScores[i] = swap;
-        }
-    }
-        // if(studentScores[i] == swap) {
-        //     charswap = studentName[i + 1];
-        //     studentName[i + 1] = studentName[i];
-        //     studentName[i] = charswap;
-        // }
-
-            // printf("studentScores == %d\n", studentScores[i]);
-
-             // print the scores
-             for(int i = 0; i < numStudents; i++) {
-                printf("%s score is %d\n", studentName, studentScores[i]);
-             }
 }
