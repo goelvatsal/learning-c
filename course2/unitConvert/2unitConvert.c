@@ -1,18 +1,19 @@
 #include <stdio.h>
 int main(void) {
     // scan number of conversions to make
-    int numofconversions = 0;
-    scanf("%d", &numofconversions);
-    printf("numofconversions = %d\n", numofconversions);
+    int numConversions = 0;
+    scanf("%d", &numConversions);
+    printf("numConversions = %d\n", numConversions);
 
     // scan the num and the unit to convert
-    double numToConvert = 0, outputNum;
-    char scannedUnit;
-    for(int i = 0; i < numofconversions; i++) {
+    for(int i = 0; i < numConversions; i++) {
+        double numToConvert = 0;
+        char scannedUnit;
         scanf("%lf %c\n", &numToConvert, &scannedUnit);
         printf("numToConvert = %lf, scannedUnit = %c\n", numToConvert, scannedUnit);
 
         // create if statements to convert prev unit to another
+        double outputNum;
         if(scannedUnit == 'g') {
             printf("changed unit = lbs\n");
             outputNum = numToConvert * 0.002205;
@@ -28,4 +29,6 @@ int main(void) {
             printf("%lf f\n", outputNum);
         }
     }
+
+
 }
