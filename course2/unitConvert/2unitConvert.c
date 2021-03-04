@@ -29,6 +29,4 @@ int main(void) {
             printf("%lf f\n", outputNum);
         }
     }
-
-
 }
