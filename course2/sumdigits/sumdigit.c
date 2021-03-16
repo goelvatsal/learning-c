@@ -6,14 +6,16 @@ int main(void) {
     scanf("%d", &sumdigit);
     printf("sumdigit = %d\n", sumdigit);
 
-    // print out the outputnum
-    int sum = sumofdigits(sumdigit);
-    printf("%d\n", sum);
-
-    // make function recursive(?)
+    // check if sumdigit is negative;
+    if (sumdigit <= 0) {
+        printf("%d is not positive. Aborting...\n", sumdigit);
+    } else {
+        // print out the outputnum
+        printf("sumofdigits = %d\n", sumdigit);
+    }
 }
 
-// create function to add 1st digit of number to second
+// create function to add 1st digit of number to second 
 int sumofdigits(int n) {
-    // sumdigit
+    
 }
