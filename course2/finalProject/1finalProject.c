@@ -29,8 +29,14 @@ int main(void) {
     // printf("studentScores == %d\n", studentScores[i]);
     int studentRank[51];
     for(int i = 0; i < numStudents; i++) {
+        if(studentScores[i + 1] == 0) {
+            break;
+        }
+        
         if(studentScores[i] > studentScores[i + 1]) {
             studentRank[i] = 1;
+        } else {
+            studentRank[i] = numStudents + 1;
         }
     }
     
