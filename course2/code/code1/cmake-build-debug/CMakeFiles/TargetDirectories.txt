@@ -1,3 +1,0 @@
-/home/goel01/learning-c/course2/code/code1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/goel01/learning-c/course2/code/code1/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/goel01/learning-c/course2/code/code1/cmake-build-debug/CMakeFiles/temp1.dir
