@@ -21,15 +21,20 @@ int main(void) {
         printf("poundReq[%d] == %.3lf\n", i, poundReq[i]);
     }
 
+    double multOld[numIng + 1];
     // for n times, multiply 1st pricePound with poundReq...
-    for(int i = 0; i < numIng; i++) {
-        double multOld[numIng + 1]; 
+    for(int i = 0; i < numIng; i++) { 
         multOld[i] = (pricePound[i] * poundReq[i]);
         printf("multOld[%d] == %.3lf\n", i, multOld[i]);
     }
 
+    double multNew = 0.0;
     // store in var the number multiplied
-    
+    for(int i = 0; i < numIng; i++) {
+         multNew = multNew + multOld[i];
+    }
+
     // add all up and print.
+    printf("array-max = %lf!\n", multNew);
 
 }
